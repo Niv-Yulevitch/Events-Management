@@ -1,0 +1,34 @@
+<div>
+    <label>בחר סוג אירוע: </label>
+    <select (change)="getEvents($event)">
+        <option value="" disabled selected>בחר...</option>
+        <option *ngFor="let t of types" [value]="t._id">{{t.typeName}}</option>
+    </select>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>מועד</th>
+                <th>תיאור</th>
+                <th>כתובת</th>
+                <th>מספר אנשים</th>
+                <th>התקיים</th>
+                <th>מחיקה</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of events">
+                <td>{{e.dateAndTimeLocalString}}</td>
+                <td>{{e.description}}</td>
+                <td>{{e.address}}</td>
+                <td>{{e.numOfPeoples}}</td>
+                <td *ngIf="isHappend(e.dateAndTime)">כן</td>
+                <td *ngIf="!isHappend(e.dateAndTime)">לא</td>
+                <td><button (click)="deleteEvent(e._id)">🗑</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

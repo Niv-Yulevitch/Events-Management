@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "2462d715-aba6-42ea-8c3b-a923c89b1b0e",
+		"name": "Events Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22434110"
+	},
+	"item": [
+		{
+			"name": "GET all types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET events by type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/events-by-type/63726231e24a1a8c8cd52dfc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events-by-type",
+						"63726231e24a1a8c8cd52dfc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST new event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"typeId\": \"63726231e24a1a8c8cd52dfc\",\n    \"dateAndTime\": \"2022-11-18T20:30:00.000Z\",\n    \"description\": \"חתונה ליואב וליאור\",\n    \"address\": \"המשביר 21, תל אביב\",\n    \"numOfPeople\": 300\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE exist event",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/events/637266aa82644f77293fff50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events",
+						"637266aa82644f77293fff50"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

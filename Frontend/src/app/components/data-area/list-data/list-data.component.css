@@ -1,0 +1,80 @@
+table {
+  margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
+  border-radius: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+th {
+  text-align: center;
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+  color: black;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+label {
+  color: white;
+  font-family: 'Heebo';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+select {
+    color: #8a8a8a;
+    width: 10%;
+    height: 34px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 27px;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-size: 105%;
+    letter-spacing: .8px;
+    transition: all .2s ease;
+    text-align: center;
+}

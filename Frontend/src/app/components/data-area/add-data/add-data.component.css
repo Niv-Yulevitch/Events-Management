@@ -1,0 +1,90 @@
+form {
+    width: 400px;
+    height: auto;
+    background-color: rgba(256, 256, 256, 0.35);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    direction: ltr;
+}
+
+.formHeader {
+    text-align: center;
+    margin: 20px 20px 30px 20px;
+    fill: #566375;
+}
+
+h3 {
+    font-family: 'Heebo';
+    font-size: 24px;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.form-item {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.formLabel {
+    position: absolute;
+    right: 40px;
+    top: 2px;
+    transition: all .4s ease;
+    color: rgb(84, 74, 74);
+    direction: rtl;
+}
+
+input {
+    color: #8a8a8a;
+    display: block;
+    width: 90%;
+    height: 44px;
+    padding: 5px 5%;
+    border: 1px solid #ccc;
+    border-radius: 27px;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-size: 105%;
+    letter-spacing: .8px;
+    transition: all .2s ease;
+}
+
+select {
+    color: #8a8a8a;
+    display: block;
+    width: 100%;
+    height: 54px;
+    padding: 5px 5%;
+    border: 1px solid #ccc;
+    border-radius: 27px;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-size: 105%;
+    letter-spacing: .8px;
+    transition: all .2s ease;
+}
+
+button {
+    float: left;
+    width: 112px;
+    height: 37px;
+    border-radius: 19px;
+    background-clip: padding-box;
+    background-color: #55b1df;
+    border: none;
+    color: #fff;
+    font-size: bold;
+    transition: all .2s ease;
+}
